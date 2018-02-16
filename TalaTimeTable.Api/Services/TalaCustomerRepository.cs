@@ -39,14 +39,15 @@ namespace TalaTimeTable.Api.Services
 
     public void Add(TalaCustomer customer)
     {
-      customer.Id = Guid.NewGuid();
+      if(customer.Id == Guid.Empty)
+        customer.Id = Guid.NewGuid();
+
       _context.Customers.Add(customer);
     }
 
     public void Delete(TalaCustomer customer)
     {
-      // no deletion allowed at the moment
-      // _context.Customers.Remove(customer);
+      _context.Customers.Remove(customer);
     }
 
     public void Update(TalaCustomer customer)
