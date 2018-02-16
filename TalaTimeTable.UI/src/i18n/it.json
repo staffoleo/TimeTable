@@ -1,0 +1,14 @@
+{
+  "menu": {
+    "dashboard": "Lavagna",
+    "folders": "Incarti" ,
+    "files": "Pratiche",
+    "users": "Utenti",
+    "auth": "Auth"
+  },
+  "language": {
+    "english": "Inglese",
+    "italian": "Italiano"
+  }
+
+}

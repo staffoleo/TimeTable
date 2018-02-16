@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-TalaTimeTable.Api-CD2F44F1-F5CA-47EC-9587-9383B27AB31A</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20180117144610_TalaAddBaseEntity.cs" />
+    <Compile Remove="Data\Migrations\20180117144610_TalaAddBaseEntity.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180117162748_Add-Tala-Customers.cs" />
+    <Compile Remove="Data\Migrations\20180117162748_Add-Tala-Customers.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180117162905_Add-Tala-Customers.cs" />
+    <Compile Remove="Data\Migrations\20180117162905_Add-Tala-Customers.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180117183416_AddTala.cs" />
+    <Compile Remove="Data\Migrations\20180117183416_AddTala.Designer.cs" />
+    <Compile Remove="Services\ITalaTimeTableRepository.cs" />
+    <Compile Remove="Services\TalaTimeTableRepository.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" PrivateAssets="All" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.0.0-rtm-rc6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+</Project>
