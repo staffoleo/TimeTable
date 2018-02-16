@@ -19,7 +19,9 @@ namespace TalaTimeTable.Api.Services
     {
       if (!string.IsNullOrEmpty(search))
       {
-        return _context.Folders.Where(x => x.Description.Contains(search)).OrderBy(a => a.Description);
+        return _context.Folders.Where(x => x.Description.Contains(search) || 
+                                           x.TalaCustomer.BusinessName.Contains(search))
+                               .OrderBy(a => a.Description);
       }
 
       return _context.Folders.OrderBy(a => a.Description);

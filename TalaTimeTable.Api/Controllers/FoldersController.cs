@@ -2,7 +2,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using TalaTimeTable.Api.Data.Entities;
-using TalaTimeTable.Api.Models.CustomerDtos;
+using TalaTimeTable.Api.Models.FolderDtos;
 using TalaTimeTable.Api.Services;
 
 namespace TalaTimeTable.Api.Controllers

@@ -12,6 +12,8 @@ using TalaTimeTable.Api.Data;
 using TalaTimeTable.Api.Data.Entities;
 using TalaTimeTable.Api.Models;
 using TalaTimeTable.Api.Models.CustomerDtos;
+using TalaTimeTable.Api.Models.FileDto;
+using TalaTimeTable.Api.Models.FolderDtos;
 using TalaTimeTable.Api.Services;
 
 namespace TalaTimeTable.Api
@@ -87,6 +89,16 @@ namespace TalaTimeTable.Api
         cfg.CreateMap<CustomerForCreationDto, TalaCustomer>();
         cfg.CreateMap<CustomerForUpdateDto, TalaCustomer>();
         cfg.CreateMap<TalaCustomer, CustomerForUpdateDto>();
+
+        cfg.CreateMap<TalaFolder, FolderDto>();
+        cfg.CreateMap<FolderForCreationDto, TalaFolder>();
+        cfg.CreateMap<FolderForUpdateDto, TalaFolder>();
+        cfg.CreateMap<TalaFolder, FolderForUpdateDto>();
+
+        cfg.CreateMap<TalaFile, FileDto>();
+        cfg.CreateMap<FileForCreationDto, TalaFile>();
+        cfg.CreateMap<FileForUpdateDto, TalaFile>();
+        cfg.CreateMap<TalaFile, FileForUpdateDto>();
       });
 
       app.UseMvc();
