@@ -14,7 +14,7 @@ namespace TalaTimeTable.Api.Test.Services
     public TalaCustomerRepositoryTest()
     {
       _sut = GetInMemoryCustomerRepository();
-      AddTestData();
+      AddCustomerTestData();
     }
 
     [Fact]
@@ -114,7 +114,7 @@ namespace TalaTimeTable.Api.Test.Services
       return new TalaCustomerRepository(dbContext);
     }
 
-    private void AddTestData()
+    private void AddCustomerTestData()
     {
       var dummyCustomer1 = new TalaCustomer
       {
